@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="mixin.css">
+    <title>Pinterest</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 250px);
+            grid-gap: 5px;
+            justify-content: center;
+        }
+
+        .item {
+            border-radius: 5px;
+            padding: 10px;
+            background-color: #f2f2f2;
+        }
+
+        .item:hover{
+            transform: scale(1.2);
+        }
+
+        .item img{
+            max-width: 100%;
+        }
+
+        .level-1{
+            grid-row-end: span 3;
+        }
+
+        .level-2{
+            grid-row-end: span 2;
+
+        }
+
+        .level-3{
+            grid-row-end: span 1;
+
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a class="active" href="index1.html">Posters</a></li>
+        <li><a href="index.html">Mixin</a></li>
+      </ul>
+      <div class="cuadro">
+          <h3 style="text-align: center; color: white;">Compra tu imagen favorita!</h3>
+      </div>
+    <div class="container">
+        <div class="item level-1">
+            <img src="images/cap2.jpg" alt="">
+        </div>
+        <div class="item level-2">
+            <img src="images/starboy.jpg" alt="">
+        </div>
+        <div class="item level-3">
+            <img src="images/dua2.jpg" alt="">
+        </div>
+        <div class="item level-1">
+            <img src="images/cap2.jpg" alt="">
+        </div>
+        <div class="item level-2">
+            <img src="images/starboy.jpg" alt="">
+        </div>
+        <div class="item level-3">
+            <img src="images/dua2.jpg" alt="">
+        </div>
+        <div class="item level-1">
+            <img src="images/cap2.jpg" alt="">
+        </div>
+        <div class="item level-2">
+            <img src="images/starboy.jpg" alt="">
+        </div>
+        <div class="item level-3">
+            <img src="images/dua2.jpg" alt="">
+        </div>
+        <div class="item level-1">
+            <img src="images/cap2.jpg" alt="">
+        </div>
+        <div class="item level-2">
+            <img src="images/starboy.jpg" alt="">
+        </div>
+        <div class="item level-3">
+            <img src="images/dua2.jpg" alt="">
+        </div>
+    </div>
+</body>
+</html>
